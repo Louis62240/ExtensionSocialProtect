@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "SocialProtect",
+    "version": "1.0",
+    "description": "Une extension simple qui affiche une alerte",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "images/logo.png",
+      "48": "images/logo.png",
+      "128": "images/logo.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": [
+      "activeTab"
+    ]
+  }
+  
